@@ -22,3 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('admin');
 Route::get('/change-pp','HomeController@change_pp')->name('upload image');
+
+Route::post('/upload-pp','HomeController@upload_pp');
+Route::get('/skills','HomeController@skill');
+Route::get('/work-exp','HomeController@work_exprience');
+Route::get('/education','HomeController@education');

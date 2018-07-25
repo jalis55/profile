@@ -65,8 +65,10 @@ class HomeController extends Controller
     }
     public function skill()
     {
-       $content=view('profile.skill');
-       return view('profile.home')->with('admin_content',$content);
+        return Redirect::to('view-skill');
+
+        $content=view('profile.skill');
+        return view('profile.home')->with('admin_content',$content);
     }
     public function work_exprience()
     {
